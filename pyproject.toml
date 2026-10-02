@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proxy15"
+version = "1.0.0"
+description = "Free, local Christmas and photo card layouts for duplex home printing."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "ISC"
+license-files = ["LICENSE", "NOTICE.md"]
+authors = [{ name = "Tessellarium Labs" }]
+keywords = ["christmas", "greeting-cards", "duplex", "pdf", "printing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Environment :: X11 Applications :: Tk",
+    "Intended Audience :: End Users/Desktop",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Printing",
+]
+dependencies = [
+    "Pillow>=10.4,<13",
+    "reportlab>=4.2,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "pypdf>=5,<7",
+    "build>=1,<2",
+]
+
+[project.scripts]
+proxy15 = "proxy15.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/tessellariumlabs/proxy15"
+Repository = "https://github.com/tessellariumlabs/proxy15"
+Issues = "https://github.com/tessellariumlabs/proxy15/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
