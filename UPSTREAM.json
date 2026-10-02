@@ -1,0 +1,8 @@
+{
+  "project": "Proxy 15",
+  "source_repository": "tessellariumlabs/tessera_ontologica",
+  "source_commit": "cd78c2da0c2dbcc4338fd2f7efb01c536fff54fb",
+  "source_path": "tools/printer_polyp/proxy15_core.py",
+  "core_sha256": "edee9f222cbed72d25441347c315698afe68bab40b081fc1abb3df3421df9dc9",
+  "notes": "The standalone release retains the original Pillow core; the public interface adds validated sizing, print alignment and export."
+}

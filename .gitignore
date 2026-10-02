@@ -15,6 +15,7 @@ dist/
 # Local artwork and generated print jobs
 christmas-demo/
 duplex-test/
+duplex-calibration/
 output/
 .ci-demo/
 .ci-duplex-test/
